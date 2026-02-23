@@ -10,7 +10,8 @@ st.write(
 )
 
 name = st.text_input("Escribe tu nombre:")
-st.write(f"Hola, {name}!") 
+if name.strip() != "":
+    st.write(f"Hola, {name}!") 
 
 st.divider()
 
